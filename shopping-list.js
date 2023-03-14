@@ -18,10 +18,10 @@ function addItem() {
   addInput.value = "";
 }
 
-// remove item
+// remove item: How to use query selector to get last child : const lastChild = document.querySelector('#myElement :last-child');
 function removeItem() {
-  itemList.removeChild(li);
   let li = document.querySelector("li:last-child");
+  itemList.removeChild(li);
 }
 
 // change color according to the color given
